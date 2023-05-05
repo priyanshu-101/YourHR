@@ -1,0 +1,34 @@
+project/
+├── client/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Home.js
+│   │   │   ├── Login.js
+│   │   │   ├── Signup.js
+│   │   │   ├── ResumeUpload.js
+│   │   │   └── ...
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── ...
+│   ├── public/
+│   │   └── index.html
+│   ├── package.json
+│   └── ...
+│
+├── server/
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   └── resumeController.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   ├── models/
+│   │   ├── User.js
+│   ├── routes/
+│   │   ├── authRoutes.js
+│   │   ├── resumeRoutes.js
+│   │   └── routes.js
+│   ├── config.js
+│   ├── app.js
+│   └── ...
+│
+└── ...
