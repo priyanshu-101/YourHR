@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +11,10 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8000/api/auth/login", { email, password });
+      await axios.post("http://localhost:8000/api/auth/login", {
+        email,
+        password,
+      });
       navigate("/resume-upload");
     } catch (error) {
       console.error(error);

@@ -4,9 +4,9 @@ import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import UploadResume from "./components/ResumeUpload";
+import ResumeUploadSuccess from "./components/ResumeUploadSuccess";
 
 const App = () => {
-
   return (
     <Router>
       <div>
@@ -15,7 +15,10 @@ const App = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/resume-upload" element={<UploadResume />} />
-          <Route path="/resume-upload-success" element={<UploadResume />} />
+          <Route
+            path="/resume-upload-success"
+            element={<ResumeUploadSuccess />}
+          />
         </Routes>
       </div>
     </Router>
